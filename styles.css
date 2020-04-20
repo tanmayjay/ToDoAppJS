@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.center {
+  align-self: center;
+}
+
+.flow-right {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flow-right span {
+  color: rgba(0, 68, 80, 0.815);
+  border: none;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.flow-right span #item-count, #unchecked-count{
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  padding: 2px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(33, 134, 141);
+  height: 97vh;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.controls, .button {
+  flex: none;
+}
+
+.title{
+  flex: none;
+  background: rgb(19, 59, 63);
+  color: rgba(255, 255, 255, 0.856);
+  font-weight: bold;
+}
+
+.button {
+  padding: 20px 20px;
+}
+
+#add-btn{
+  height: inherit;
+  font-size: 25px;
+  background-color: rgba(0, 68, 80, 0.815);
+  color: #eee;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#add-btn:hover{
+  color: rgba(180, 255, 233, 0.301);
+}
+
+.todo-list {
+  flex: 1 1 0;
+  margin-top: 20px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.todo-delete {
+  margin: 10px;
+  float: right;
+  height: 25px;
+  width: 25px;
+  color: rgb(255, 255, 255);
+  font-size: large;
+  background-color: rgb(182, 88, 88);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todo-delete:hover{
+  color: rgb(182, 88, 88);
+  background-color: rgb(255, 255, 255);
+}
+
+.todo-checkbox {
+  margin: 10px;
+}
+
+.todo-container {
+  padding: 20px;
+  border-bottom: 1px solid rgb(235, 230, 230);
+  font-size: xx-large;
+  color: #eee;
+}
+
+.completed-todo {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  text-decoration: line-through;
+  text-decoration-color: rgb(185, 185, 185);
+  color: rgb(160, 158, 158);
+  font-size: xx-large;
+}
+
+.todo-container:first-of-type {
+  border-top: 1px solid #eee;
+}
+
+.completed-todo:first-of-type {
+  border-top: 1px solid #eee;
+}
+
+#error{
+  display: none;
+  color: whitesmoke;
+  margin-top: 25px;
+  padding: 10px;
+  font-size: large;
+  margin-bottom: 0;
+  background-color: rgb(199, 84, 84);
+  border-radius: 3px;
+  width: 95%;
+  align-self: center;
+  text-align: center;
+}
+
+#new-todo{
+  background-color: rgb(182, 88, 88);
+}
+
+#input-field{
+  display: flex;
+  height: 4rem;
+  padding: 20px;
+  align-self: center;
+  width: 100%;
+}
+
+input[type=text] {
+  width: inherit;
+  height: inherit;
+  outline-color: rgb(245, 245, 245);
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 2rem;
+  padding-left: 10px;
+  background-color: rgba(180, 255, 233, 0.301);
+  border-radius: 5px;
+} 
+
+input[type=text]::placeholder{
+  color: rgba(56, 56, 56, 0.541);
+}
+
+input[type=checkbox] {
+  height: 25px;
+  width: 25px;
+  background-color: rgb(255, 130, 130);
+  top: 5px;
+  border-radius: 25px;
+  border-color: rgb(88, 86, 86);
+}
