@@ -1,9 +1,7 @@
 # ToDoAppJS
 
-A simple TODO List Application using JavaScript (VanillaJS, DOM)
+## A simple TODO List Application using JavaScript (VanillaJS, DOM)
 
-Go to the following link for live demonstration of the app:
-https://tanmayjay.github.io/ToDoAppJS/
+Click  [Here](https://tanmayjay.github.io/ToDoAppJS/) for live demonstration.
 
-Here is a youtube video demonstration link for the application:
-https://youtu.be/9EBgCkvXu-E
+Here is a [youtube video demonstration](https://youtu.be/9EBgCkvXu-E) of the application.
